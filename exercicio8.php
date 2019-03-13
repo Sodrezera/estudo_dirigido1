@@ -5,5 +5,5 @@
     $anos = (int) fgets(STDIN);
     $diastotais = $anos*365;
     $cigarrototais = $diastotais*$pordia;
-    $tempoperdido = (($cigarrototais*10)/24)/60;
+    $tempoperdido = round((($cigarrototais*10)/24)/60);
     print "Você perdeu $tempoperdido dias da sua vida.\n\n";
